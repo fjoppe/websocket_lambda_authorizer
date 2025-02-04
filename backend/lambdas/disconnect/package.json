@@ -1,0 +1,16 @@
+{
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc && esbuild src/index.ts --bundle --minify --sourcemap --platform=node --target=es2020 --outfile=dist/index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "esbuild": "^0.24.2",
+    "@types/node": "^22.13.0",
+    "@types/aws-lambda": "^8.10.146"
+  },
+  "dependencies": {
+    "aws-lambda": "^1.0.7",
+    "@aws-sdk/client-s3": "^3.740.0"
+  }
+}
