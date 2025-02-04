@@ -17,7 +17,6 @@ export async function handler(
 
   console.log(`Authorized: ${permission}`);
 
-  //  always allow
   const policy = {
     policyDocument: {
       Version: "2012-10-17",
